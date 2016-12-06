@@ -3,7 +3,7 @@
 {% block title %} Restaurant {% endblock %}
 
 {% block sidebar %}
-  <div.class= "text-center">
+  <div class= "text-center">
     <img class="img-circle" src="{{ MEDIA_URL }}{{ request.user.restaurant.logo }}"
       width="70" height="70" />
       <br/>
@@ -20,7 +20,7 @@
       <a href="{% url 'restaurant-report' %}" class="list-group-item">Reports</a>
 
       <span class="text-uppercase">Profile</span>
-      <a href="{% url 'restaurant-account' %}">Account</a>
+      <a href="{% url 'restaurant-account' %}" class="list-group-item">Account</a>
     </div>
 
     <div class="text-center">
